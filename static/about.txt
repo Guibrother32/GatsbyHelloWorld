@@ -1,0 +1,6 @@
+- THE FOLLOWING INSTRUCTIONS ITS NOT ENCORAGED BY THE GATSBTY TEAM
+YOU'RE GONNA BE LOSING THE WEBPACK OPTIMIZATION
+
+-> can place here assets (stylesheets or images)
+
+-> once we place here its gonna be automatically available in the public folder

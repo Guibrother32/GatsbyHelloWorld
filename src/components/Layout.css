@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
+
+body{
+    font-family: 'Rowdies', cursive;
+}
+
+h1{
+    color: green;
+    text-transform: uppercase;
+}
+
+.blog-text{
+    line-height: 2;
+    color: greenyellow;
+}
+
+.prod-text{
+    line-height: 3;
+    color: gray;
+}

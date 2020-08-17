@@ -1,0 +1,51 @@
+=================================================================================================
+
+Link
+
+import {Link} from 'gatsby';
+
+SPA approach -> Does not reload the page.
+We do not fetch a page to a server each time we navigate.
+
+*Link is only used to navigate inside our project -> to external links use common <a></a>
+
+=================================================================================================
+
+Wrap components - children
+ 
+-> You got adjust children so then it can be displayed
+-> Just place children anywhere you want to (Layout component example)
+
+=================================================================================================
+
+CSS module
+
+-> name.module.css (you have got to name like this)
+
+-> Got UNIQUE and SCOPE style for a component
+
+=================================================================================================
+
+GraphQL - Tool for get access of data http://localhost:8000/___graphql
+
+1)Write a query (or select manually clicking)
+2)See the result at its right
+3)At Code Exporter choose between (StaticQuery (older version), StaticQuery hook, Page query(for pages only, that is, files in page folder, you can not use in a component) )
+
+    - const data = useStaticQuery( GraphQL query )
+    place a GraphQL query within useStaticQuery and then you retrieve the data.
+
+4)Copy Code Exporter code and you will have access to those info, then you can export and have a customised component with those data.
+
+=================================================================================================
+
+gatsby-imgage plugin
+
+Resize large images to the size needed by your design.
+Generate multiple smaller images so smartphones and tablets don’t download desktop-sized images.
+Strip all unnecessary metadata and optimize JPEG and PNG compression.
+Efficiently lazy load images to speed initial page load and save bandwidth.
+Use the “blur-up” technique or a ”traced placeholder” SVG to show a preview of the image while it loads.
+Hold the image position so your page doesn’t jump while images load.
+
+=================================================================================================
