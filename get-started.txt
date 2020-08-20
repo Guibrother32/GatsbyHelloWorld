@@ -1,0 +1,8 @@
+npm install -g gatsby-cli
+
+gatsby new tutorial
+
+gatsby new my-gatsby-project https://github.com/gatsbyjs/gatsby-starter-hello-world
+
+
+gatsby develop

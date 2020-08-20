@@ -18,8 +18,13 @@ h1 {
 
 img {
     max-width: 100%;
+    overflow : hidden;
 }
 
 .small {
     width: 50%;
+}
+
+.image-size {
+    height: 250px;
 }

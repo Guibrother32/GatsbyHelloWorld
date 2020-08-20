@@ -1,21 +1,50 @@
-import React from 'react';
+import React from "react"
+import { graphql } from "gatsby"
 import Layout from '../components/Layout';
+import Img from 'gatsby-image';
+import { Link } from 'gatsby';
+import styles from '../styles/products.module.css'
 
-import styles from '../components/products.module.css';
+const ComponentName = ({ data }) => {
+  console.log(data);
 
-const products = () => {
-    return (
-        <Layout>
-            <div className={styles.page}>
-                <h1>This is our Products Page!</h1>
-                <p className={styles.text}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into el
-            </p>
+  const { allContentfulProduct: { nodes: products } } = data;
+  //products here is an allias(different name)
+
+  return (
+    <>
+      <Layout>
+        <section className={styles.section__images}>
+          {products.map((prod) => {
+            return <div className={styles.card} key={prod.id}>
+              <h2 className={styles.title}>{prod.title}</h2>
+              <Img fluid={prod.image.fluid} className={styles.imageSize}></Img>
+              <Link to={`/products/` + prod.slug} className={styles.link}>See details</Link>
+              <p className={prod.price > 100 ? styles.expensive : styles.cheap}>Price:{prod.price}</p>
             </div>
-        </Layout>
-    )
+          })}
+        </section>
+      </Layout>
+    </>
+  );
 }
 
-export default products
+export const query = graphql`
+  {
+    allContentfulProduct {
+      nodes {
+        price
+        title
+        slug
+        id
+        image {
+          fluid {
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  }
+`
 
-//rafce
+export default ComponentName

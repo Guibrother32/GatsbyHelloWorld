@@ -1,0 +1,59 @@
+.section__images {
+    /* display        : flex;
+    flex-wrap      : wrap;
+    align-items    : stretch;
+    justify-content: space-between; */
+    display              : grid;
+    grid-template-columns: 1fr;
+    column-gap           : 2rem;
+}
+
+@media screen and (min-width: 850px) {
+    .section__images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    .section__images {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.card {
+    height          : 500px;
+    width           : 350px;
+    margin          : 10px 20px;
+    background-color: #f5f5f5;
+    box-shadow      : 0 2px 8px #00000042;
+    position        : relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align    : center;
+    text-transform: capitalize;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image-size {
+    height: 270px;
+}
+
+.link {
+    position: absolute;
+    bottom  : 15px;
+    right   : 15px;
+}
+
+.expensive {
+    color: red;
+}
+
+.cheap {
+    color: green;
+}

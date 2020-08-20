@@ -37,8 +37,16 @@ module.exports = {
         path: `${__dirname}/src/post/`,
       },
     },
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `3o2914b2zflq`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `QLFZu_7Nb1SDNe6ceXZsbCxIFC5ekjnvOJL1VVuTZvU`,
+      },
+    },
   ],
 }
 

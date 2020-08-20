@@ -34,6 +34,8 @@ GraphQL - Tool for get access of data http://localhost:8000/___graphql
 
     - const data = useStaticQuery( GraphQL query )
     place a GraphQL query within useStaticQuery and then you retrieve the data.
+    **Notice that this approach is only for the StaticQuery Hook only
+    in Page query for example we do not need it as the code generated in Code Explorer shows
 
 4)Copy Code Exporter code and you will have access to those info, then you can export and have a customised component with those data.
 
@@ -49,3 +51,13 @@ Use the “blur-up” technique or a ”traced placeholder” SVG to show a prev
 Hold the image position so your page doesn’t jump while images load.
 
 =================================================================================================
+
+Dashbords - Content Management  / Contentful / Strapi / 
+JAM Stack - Js Api Markdown
+
+In this example we're using Contentful
+
+GatsbyProject <---- GraphQL ------ Contentful
+
+1st - Install and config plugin in gatsby-config.js
+2nd - Insert the right key to the Contentful 

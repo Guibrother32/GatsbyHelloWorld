@@ -1,0 +1,26 @@
+.product-template {
+    width   : fit-content;
+    margin  : 0 auto;
+    position: relative;
+}
+
+.description {
+    display : inline-block;
+    padding : 10px;
+    width   : 450px;
+    position: relative;
+    top: -90px;
+    right: 0;
+
+}
+
+.description p:first-of-type {
+    text-align: end;
+}
+
+.description p:last-of-type {
+    position: relative;
+    display: inline-block;
+    top  : 50px;
+    left   : 340px;
+}
